@@ -8,22 +8,145 @@
     <title>Site Title</title>
 </head>
 <body>
+    <section class="add-section">
+        <div class="container">
+            <div class="add">
+                <p class="add__text">Скидка 10% по промокоду “ZAMOK” на все заказы до 10.09</p>
+                <a class="add__text-link" href="#">Обратный звонок</a>
+            </div>
+        </div>
+    </section> 
     <header class="site-header">
         <div class="container">
-            <div class="header"></div>
+            <div class="header">
+                <div class="header-content-wrapper1">
+                    <button onclick="handleMenuIconOpen()" class="hamburger-icon"><img src="./images/hamburger-icon.svg" alt="hamburger Icon" width="24" height="24"></button> 
+                    <a class="site-logo" href="#"><img src="./images/site-logo.svg" alt="Site Logo" width="50" height="42"></a>
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a class="header__text-link" href="#">Главная</a>
+                        </li>   
+                        <li class="header__item">
+                            <a class="header__text-link katalog" href="#">Каталог</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__text-link" href="#">Оптовая продажа</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__text-link" href="#">О нас</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__content-wrapper2">
+                    <div class="header__number-wrapper">
+                        <img src="./images/header-phone.svg" alt="Header Phone" width="20" height="20">
+                        <a class="header__number" href="tel:+7(966)5588499">+7 (966) 55 88 499</a>
+                    </div>
+                    <div class="icons">
+                        <button class="header__heart" onclick="backgroundColorRed()">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.75 5C7.57485 5 5 7.60947 5 10.8289C5 13.4278 6.00625 19.5958 15.9112 25.831C16.0886 25.9415 16.2923 26 16.5 26C16.7077 26 16.9114 25.9415 17.0888 25.831C26.9937 19.5958 28 13.4278 28 10.8289C28 7.60947 25.4251 5 22.25 5C19.0748 5 16.5 8.53267 16.5 8.53267C16.5 8.53267 13.9251 5 10.75 5Z" stroke="#454F5B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <button class="header__shop">
+                            <a href="#"><img src="./images/header-shop.svg" alt="Header Shop" width="32" height="32"></a>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
-    </header>
+    </header>  
+    <ul class="modal">
+        <li class="modal__item">
+            <a class="modal__text-link" href="#">Главная</a>
+        </li>
+        <li class="modal__item">
+            <a class="modal__text-link" href="#">Каталог</a>
+        </li>
+        <li class="modal__item">
+            <a class="modal__text-link" href="#">Оптовая продажа</a>
+        </li>
+        <li class="modal__item">
+            <a class="modal__text-link" href="#">О нас</a>
+        </li>
+    </ul>
     <main class="site-main">
         <section class="hero-section">
             <div class="container">
-                <div class="hero"></div>
+                <div class="hero">
+                    <img class="hero__img" src="./images/hero-img.png" alt="Hero Img" width="500" height="528">
+                    <div class="hero__content-wrapper">
+                        <div class="hero__title-wrapper">
+                            <h1 class="hero__title">Golden Soft GS-200Z-5 для офиса</h1>
+                        </div>
+                        <div class="hero__texts-wrapper">
+                            <p class="hero__text1">Замок дверной электронный Golden Soft GS-200Z-5 имеет роскошный глянцевый блеск, четкие линии, красивые формы.</p>
+                            <p class="hero__text2">Подходит для установки на деревянную/межкомнатную дверь.</p>
+                        </div>
+                        <strong class="hero__strong">Цена</strong>
+                        <div class="hero__prices">
+                            <p class="hero__price1">33 000₽</p>
+                            <p class="hero__price2">37 000₽</p>
+                            <span class="hero__span"></span>
+                        </div>
+                        <a class="hero__link" href="#">Добавить в корзину</a>
+                    </div>
+                </div>
+                <div class="arrow-wrapper">
+                    <img class="hero__arrow1" src="./images/left-arrow.svg" alt="Hero Left Arrow" width="32" height="32">
+                    <button onclick="border()" class="hero__dots"><div class="hero__dot"></div></button>
+                    <button onclick="border()" class="hero__dots"><div class="hero__dot"></div></button>
+                    <button onclick="border()" class="hero__dots"><div class="hero__dot"></div></button>
+                    <img class="hero__arrow2" src="./images/right-arrow.svg" alt="Hero Right Icon" width="32" height="32">
+                </div>
             </div>
-        </section>
-    </main>
+        </section> 
+        <section class="client-section">
+            <div class="container client">
+                <ul class="client__list">
+                    <li class="client__item">
+                        <strong class="client__number">5,567</strong>
+                        <p class="client__text">Счастливых клиентов</p>
+                    </li>
+                    <li class="client__item">
+                        <strong class="client__number">1245</strong>
+                        <p class="client__text">Продуктов на выбор</p>
+                    </li>
+                    <li class="client__item">
+                        <strong class="client__number">372</strong>
+                        <p class="client__text">Продаж в день</p>
+                    </li>
+                    <li class="client__item">
+                        <strong class="client__number">20</strong>
+                        <p class="client__text">Лет на рынке</p>
+                    </li>
+                </ul>
+            </div>
+        </section> 
+        <section class="gold-section">
+            <div class="container gold">
+                <ul class="gold__list">
+                    <li class="gold__item">
+                        <img class="gold__img" src="./images/gold-icon1.svg" alt="Gold Icon" width="82" height="82">
+                        <p class="gold__text">Возврат удвоенной стоимости каждого замка в случае брака.</p>
+                    </li>
+                    <li class="gold__item">
+                        <img class="gold__img" src="./images/gold-icon2.svg" alt="Gold Icon" width="82" height="82">
+                        <p class="gold__text">Наносим ваш логотип компании на наш продукт.</p>
+                    </li>
+                    <li class="gold__item">
+                        <img class="gold__img" src="./images/gold-icon3.svg" alt="Gold Icon" width="82" height="82">
+                        <p class="gold__text">Возврат удвоенной стоимости каждого замка в случае брака.</p>
+                    </li>
+                </ul>
+            </div>
+        </section> 
+    </main> 
     <footer class="site-footer">
         <div class="container">
             <div class="footer"></div>
         </div>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>

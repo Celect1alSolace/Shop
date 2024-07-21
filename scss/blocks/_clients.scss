@@ -1,0 +1,30 @@
+.client-section {
+    padding: 40px 0;
+    background-color:  #F2F8FF;
+}
+.client__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 82px;
+}
+.client__item {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.client__number {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 38px;
+    color: $black-clr;
+    text-align: center;
+}
+.client__text {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    color: $gray-clr;
+}
+// Responsive Start
+// Responsive End

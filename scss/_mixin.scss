@@ -1,11 +1,10 @@
-
 @mixin Display($items, $space, $gap){
     display: flex;
     align-items: $items;
     justify-content: $space;
     gap: $gap;
 }
-@mixin textStyle($MB, $FS, $FW, $CLR, $LH, $CASE){
+@mixin TextStyle($MB, $FS, $FW, $CLR, $LH, $CASE){
     margin-bottom: $MB;
     font-size: $FS;
     font-weight: $FW;
@@ -15,7 +14,7 @@
 }
 
 
-@mixin buttonStyle($BTN_W, $BTN_PY, $BTN_BG_CLR,$BTN_BR_Radius, $BTN_Border_CLR,$BTN_FS,$BTN_FW, $BTN_LH, $BTN_CLR,$BTN_CASE){
+@mixin ButtonStyle($BTN_W, $BTN_PY, $BTN_BG_CLR,$BTN_BR_Radius, $BTN_Border_CLR,$BTN_FS,$BTN_FW, $BTN_LH, $BTN_CLR,$BTN_CASE){
     width: $BTN_W;
     padding: $BTN_PY 0;
     background-color: $BTN_BG_CLR;
